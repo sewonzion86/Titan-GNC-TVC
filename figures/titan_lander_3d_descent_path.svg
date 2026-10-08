@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680" viewBox="0 0 1000 680">
+  <rect width="1000" height="680" fill="#f3f3f3"/>
+  <style>
+    .title { font: 16px sans-serif; fill:#333; }
+    .label { font: 12px sans-serif; fill:#333; }
+    .tick { font: 11px sans-serif; fill:#666; }
+    .grid { stroke:#d6d6d6; stroke-width:1; }
+    .axis { stroke:#444; stroke-width:1.2; }
+    .line { fill:none; stroke:#2d7fda; stroke-width:2.2; }
+    .wire { fill:none; stroke:#2d7fda; stroke-width:2; opacity:0.8; }
+  </style>
+  <text x="500" y="30" text-anchor="middle" class="title">Titan Lander — Conceptual 3D Descent Path</text>
+
+  <g transform="translate(240,120)">
+    <g class="grid">
+      <line x1="0" y1="0" x2="300" y2="0"/>
+      <line x1="0" y1="0" x2="0" y2="200"/>
+      <line x1="0" y1="0" x2="200" y2="120"/>
+      <line x1="200" y1="120" x2="200" y2="320"/>
+      <line x1="0" y1="200" x2="200" y2="320"/>
+      <line x1="300" y1="0" x2="500" y2="120"/>
+      <line x1="300" y1="0" x2="300" y2="200"/>
+      <line x1="0" y1="200" x2="300" y2="200"/>
+      <line x1="200" y1="120" x2="500" y2="120"/>
+      <line x1="200" y1="320" x2="500" y2="320"/>
+      <line x1="300" y1="200" x2="500" y2="320"/>
+      <line x1="0" y1="200" x2="200" y2="320"/>
+    </g>
+
+    <path class="wire" d="M50,170 Q120,120 200,90 Q290,80 350,130 Q410,180 440,240"/>
+    <path class="wire" d="M50,170 Q120,210 200,240 Q290,280 350,270 Q410,260 440,240"/>
+    <path class="wire" d="M50,170 L200,90 L440,240"/>
+    <path class="wire" d="M50,170 L200,240 L440,240"/>
+    <path class="wire" d="M200,90 L200,240"/>
+  </g>
+</svg>

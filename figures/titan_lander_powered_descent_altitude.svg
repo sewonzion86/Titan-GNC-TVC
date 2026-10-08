@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680" viewBox="0 0 1000 680">
+  <rect width="1000" height="680" fill="#f3f3f3"/>
+  <style>
+    .title { font: 16px sans-serif; fill:#333; }
+    .label { font: 12px sans-serif; fill:#333; }
+    .tick { font: 11px sans-serif; fill:#666; }
+    .grid { stroke:#d6d6d6; stroke-width:1; }
+    .axis { stroke:#444; stroke-width:1.2; }
+    .line { fill:none; stroke:#2d7fda; stroke-width:2.2; }
+  </style>
+  <text x="500" y="30" text-anchor="middle" class="title">Titan Lander — Powered Descent Altitude</text>
+
+  <g transform="translate(90,70)">
+    <g class="grid">
+      <line x1="0" y1="0" x2="820" y2="0"/>
+      <line x1="0" y1="60" x2="820" y2="60"/>
+      <line x1="0" y1="120" x2="820" y2="120"/>
+      <line x1="0" y1="180" x2="820" y2="180"/>
+      <line x1="0" y1="240" x2="820" y2="240"/>
+      <line x1="0" y1="300" x2="820" y2="300"/>
+      <line x1="0" y1="360" x2="820" y2="360"/>
+      <line x1="0" y1="420" x2="820" y2="420"/>
+      <line x1="0" y1="480" x2="820" y2="480"/>
+      <line x1="0" y1="540" x2="820" y2="540"/>
+      <line x1="0" y1="0" x2="0" y2="540"/>
+      <line x1="82" y1="0" x2="82" y2="540"/>
+      <line x1="164" y1="0" x2="164" y2="540"/>
+      <line x1="246" y1="0" x2="246" y2="540"/>
+      <line x1="328" y1="0" x2="328" y2="540"/>
+      <line x1="410" y1="0" x2="410" y2="540"/>
+      <line x1="492" y1="0" x2="492" y2="540"/>
+      <line x1="574" y1="0" x2="574" y2="540"/>
+      <line x1="656" y1="0" x2="656" y2="540"/>
+      <line x1="738" y1="0" x2="738" y2="540"/>
+      <line x1="820" y1="0" x2="820" y2="540"/>
+    </g>
+
+    <line x1="0" y1="540" x2="820" y2="540" class="axis"/>
+    <line x1="0" y1="0" x2="0" y2="540" class="axis"/>
+
+    <path class="line" d="M0,540 C55,515 110,470 164,410 S246,340 328,290 S410,170 492,120 S574,52 656,18 S738,8 820,4"/>
+
+    <g class="tick">
+      <text x="0" y="560" text-anchor="middle">0</text>
+      <text x="164" y="560" text-anchor="middle">200</text>
+      <text x="328" y="560" text-anchor="middle">400</text>
+      <text x="492" y="560" text-anchor="middle">600</text>
+      <text x="656" y="560" text-anchor="middle">800</text>
+      <text x="820" y="560" text-anchor="middle">1000</text>
+      <text x="-18" y="540" text-anchor="end">0</text>
+      <text x="-18" y="425" text-anchor="end">5000</text>
+      <text x="-18" y="310" text-anchor="end">10000</text>
+      <text x="-18" y="195" text-anchor="end">15000</text>
+      <text x="-18" y="80" text-anchor="end">20000</text>
+    </g>
+
+    <text x="410" y="585" text-anchor="middle" class="label">Time (s)</text>
+    <text x="-55" y="270" text-anchor="middle" class="label" transform="rotate(-90 -55 270)">Altitude (m)</text>
+  </g>
+</svg>
