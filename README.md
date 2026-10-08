@@ -6,14 +6,10 @@ MATLAB simulation of a powered descent lander for Titan with GNC and TVC control
 
 This repository models a powered descent and landing scenario for Titan using a simplified guidance, navigation, and control architecture. The simulation includes altitude tracking, thrust modulation, TVC steering, vertical-rate control, and a conceptual 3D descent trajectory.
 
-## Main Simulation
+## MATLAB Files
 
-Run the MATLAB script from the repository root and generate the figures used below.
-
-```matlab
-% example entry point
-% add the repo root to the path and run the main script
-```
+- `Titan_GNC_TVC.m` — main simulation script
+- `launcher.m` — convenience runner that executes the main simulation
 
 ## Simulation Output Figures
 
@@ -42,6 +38,8 @@ Run the MATLAB script from the repository root and generate the figures used bel
 ```text
 Titan-GNC-TVC/
 ├── README.md
+├── Titan_GNC_TVC.m
+├── launcher.m
 ├── figures/
 │   ├── titan_lander_powered_descent_altitude.svg
 │   ├── titan_lander_thrust_command.svg
